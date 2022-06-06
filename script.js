@@ -1,5 +1,7 @@
 "use strict";
 
+// get the user’s choice
+
 const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
 
@@ -15,6 +17,8 @@ const getUserChoice = (userInput) => {
     console.log("Please enter a valid input");
   }
 };
+
+// get the computer’s choice
 
 const getComputerChoice = () => {
   let randomNum = Math.floor(Math.random() * 3);
@@ -33,7 +37,10 @@ const getComputerChoice = () => {
   return randomNum;
 };
 
+// compare the two choices and determine a winner
+
 const determineWinner = (userChoice, computerChoice) => {
+  // if the user knows the secret cheat code, then the user always wins
   if (userChoice === "win") {
     return "User always wins!";
   }
@@ -65,6 +72,8 @@ const determineWinner = (userChoice, computerChoice) => {
     }
   }
 };
+
+// run the program and show the results
 
 const playGame = () => {
   const userChoice = getUserChoice("roCk");
