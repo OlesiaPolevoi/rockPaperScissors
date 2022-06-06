@@ -79,8 +79,8 @@ const playGame = () => {
   const userChoice = getUserChoice("roCk");
   const computerChoice = getComputerChoice();
 
-  console.log(userChoice);
-  console.log(computerChoice);
+  console.log("User's Choice: ", userChoice);
+  console.log("Computer's Choice: ", computerChoice);
   console.log(determineWinner(userChoice, computerChoice));
 };
 
